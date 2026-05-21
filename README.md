@@ -183,6 +183,11 @@ Durante o ciclo de desenvolvimento da aplicação, o projeto passou por problema
 - **Redução de Escala Cartesiana (`escala`):** Reduzi e controlei o multiplicador escalar para `0.015`, fazendo o diâmetro total ocupado pelo cachorro caber de maneira segura dentro da tela do simulador.
 - **Offsets de Transposição (`offset_x` e `offset_y`):** Em vez de centralizar na média geométrica pura que causava cortes, o nó do ROS adiciona dinamicamente `6.8` no eixo X e `5.8` no eixo Y antes de chamar o teleporte, deslocando o cachorro milimetricamente para fora do alcance de colisão das paredes e deixando o desenho centralizado e gigante na tela.
 
+## Demonstração Prática em Vídeo
+
+Assista ao vídeo explicativo clicando no link abaixo:
+👉 [**Vídeo de Demonstração**](https://youtube.com/ou-drive-do-video)
+
 ## Conclusão
 
 O projeto cumpre o objetivo de integrar visão computacional aplicada e robótica móvel. Partindo de uma imagem comum, o pipeline desenvolvido foi capaz de:
