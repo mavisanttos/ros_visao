@@ -58,7 +58,7 @@ class BulldogDrawer(Node):
     # função responsável pelo desenho
     def start_drawing(self):
         json_path = os.path.expanduser(
-            '../../output/pontos_turtle.json'
+            '~/eng_comp/2_ano/modulo_6/programacao/ponderada/ros_visao/output/pontos_turtle.json'
         )
         try:
             with open(json_path, 'r') as f:

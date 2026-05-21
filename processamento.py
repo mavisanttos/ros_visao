@@ -131,7 +131,7 @@ def dilatar_imagem(imagem_binaria):
     img_h, img_w = imagem_binaria.shape
 
     # cria cópia da imagem
-    output = imagem_binaria.copy()
+    output = np.zeros_like(imagem_binaria)
 
     # percorre linhas
     for i in range(1, img_h - 1):
@@ -143,7 +143,9 @@ def dilatar_imagem(imagem_binaria):
             if imagem_binaria[i, j] == 255:
 
                 # transforma toda a vizinhança 3x3 em branco, expandindo a borda
-                output[i-1:i+2, j-1:j+2] = 255
+                for oi in [-1, 0, 1]:
+                    for oj in [-1, 0, 1]:
+                        output[i + oi, j + oj] = 255
 
     # retorna imagem dilatada
     return output

@@ -75,7 +75,7 @@ def main():
     indices_y, indices_x = np.where(img_final == 255)
 
     # passo da amostragem onde a cada 4 pixels encontrados, apenas 1 será mantido
-    passo = 4
+    passo = 5
     indices_x_filtrados = indices_x[::passo]
 
     # faz a mesma filtragem para os índices y
@@ -103,7 +103,7 @@ def main():
     plt.imsave('output/passo3_sobel.jpg', img_sobel, cmap='gray')
     plt.imsave('output/passo4_binaria_zonas.jpg', img_binaria, cmap='gray')
     plt.imsave('output/passo5_limpa.jpg', img_limpa, cmap='gray')
-    plt.imsave('output/passo6_final_dilatada.jpg', img_amostrada, cmap='gray') 
+    plt.imsave('output/passo6_final_dilatada.jpg', img_final, cmap='gray') 
     
 
     # caminho para o arquivo JSON

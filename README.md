@@ -54,6 +54,9 @@ source install/setup.bash
 
 ### 5. Executando o Projeto via Arquivo Launch
 
+> **ATENÇÃO:** O arquivo de execução do robô carrega o JSON lendo de um caminho absoluto para evitar falhas de execução inerentes ao ROS 2.
+> Antes de rodar, por favor acesse o arquivo `workspace_turtle/src/turtle_draw_pkg/turtle_draw_pkg/drawer_node.py` (na função `start_drawing`) e edite a variável `json_path` para o caminho absoluto de onde você clonou este repositório no seu computador, apontando para o seu `output/pontos_turtle.json`.
+
 Criei um script de automação de inicialização (launch). Com apenas um único comando, o ROS abrirá a interface visual azul do `turtlesim_node` e disparará o nó inteligente de desenho `drawer_node` de forma integrada no mesmo terminal:
 
 ```bash
@@ -185,8 +188,7 @@ Durante o ciclo de desenvolvimento da aplicação, o projeto passou por problema
 
 ## Demonstração Prática em Vídeo
 
-Assista ao vídeo explicativo clicando no link abaixo:
-👉 [**Vídeo de Demonstração**](https://youtube.com/ou-drive-do-video)
+Assista ao vídeo explicativo clicando no link: [**Vídeo de Demonstração**](https://youtu.be/V8EIyCRxcAc)
 
 ## Conclusão
 
